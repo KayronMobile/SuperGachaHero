@@ -66,7 +66,6 @@ class _ContratoDiarioPageState
       }
     }
 
-    // Primeiro sorteio do dia é gratuito
     if (agenteAtual == null) {
       await _sortear(
         gastarGacha: false,

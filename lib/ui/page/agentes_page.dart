@@ -23,10 +23,9 @@ class _AgentesPageState extends State<AgentesPage> {
     super.initState();
 
     _pagingController = PagingController<int, Agente>(
-      // Decide qual será a próxima página.
+      
       getNextPageKey: (state) {
-        // Se a última página veio vazia,
-        // significa que acabou.
+        
         if (state.lastPageIsEmpty) {
           return null;
         }
@@ -94,7 +93,7 @@ class _AgentesPageState extends State<AgentesPage> {
                   );
                 },
 
-                // Carregando a primeira página
+           
                 firstPageProgressIndicatorBuilder:
                     (context) {
                   return const Center(
