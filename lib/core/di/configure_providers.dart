@@ -13,7 +13,7 @@ class ConfigureProviders {
 
   static Future<ConfigureProviders> createDependencyTree() async {
 
-    final api_client = ApiClient(baseUrl: "http://192.168.100.131:3000");
+    final api_client = ApiClient(baseUrl: "https://supergachahero.onrender.com");
     final network_mapper = NetworkMapper();
     final agente_dao = AgentesDAO();
 
@@ -62,7 +62,7 @@ class ConfigureProviders {
   ConfigureProviders({required this.providers});
 
   static Future<ConfigureProviders> createDependencyTree() async {
-    final apiClient = ApiClient(baseUrl: "http://192.168.0.11:3000");
+    final apiClient = ApiClient(baseUrl: "https://supergachahero.onrender.com");
     final networkMapper = NetworkMapper();
 
     final agenteDao = AgentesDAO();
